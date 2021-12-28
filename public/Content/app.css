@@ -1,0 +1,105 @@
+body {
+    margin: auto;
+        /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    margin: auto;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    
+}
+
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
+
+ .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@font-face {
+  font-family: 'Gilroy ExtraBold';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/183516/gilroy-extrabold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy Light';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Gilroy Light'), local('Gilroy-Light'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/183516/gilroy-light-webfont.woff') format('woff');
+}
+
+.Menu-list {
+  font-size: 4.25rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotateX(-10deg) rotateY(20deg);
+}
+
+.Menu-list-item {
+  position: relative;
+  color: transparent;
+  cursor: pointer;
+}
+.Menu-list-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 49%;
+  left: -10%;
+  right: -10%;
+  height: 4px;
+  border-radius: 4px;
+  margin-top: -2px;
+  background: #FF2C75;
+  transform: scale(0);
+  transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+  z-index: 1;
+}
+
+.Mask {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  color: #FF2C75;
+  top: 0;
+  height: 49%;
+  transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+}
+.Mask span {
+  display: block;
+}
+
+.Mask + .Mask {
+  top: 48.9%;
+  height: 51.1%;
+}
+.Mask + .Mask span {
+  transform: translateY(-49%);
+}
+
+.Menu-list-item:hover .Mask,
+.Menu-list-item:active .Mask {
+  color: #FFF;
+  transform: skewX(12deg) translateX(5px);
+}
+.Menu-list-item:hover .Mask + .Mask,
+.Menu-list-item:active .Mask + .Mask {
+  transform: skewX(12deg) translateX(-5px);
+}
+.Menu-list-item:hover::before,
+.Menu-list-item:active::before {
+  transform: scale(1);
+}
