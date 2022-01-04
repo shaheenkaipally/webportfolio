@@ -1,45 +1,56 @@
 <%- include partials/header.ejs %>
 
     <%- include partials/main_nav.ejs %>
+<main class="container" >
+    <h4 class="display-4">Skillset</h4>
+    <div id="wrapper" class="center" >
+        <div class="chart">
+            
+            <table id="data-table" border="1" cellpadding="10" cellspacing="0" summary="skillset" >
+                <thead>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <th scope="col">CSS+HTML</th>
+                        <th scope="col">NodeJS</th>
+                        <th scope="col">Java</th>
+                        <th scope="col">Python</th>
+                        <th scope="col">Android</th>
+                        <th scope="col">Unity</th>
+                        <th scope="col">Adobe Photoshop</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>		
+                        <td>75</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>60</td>
+                        <td>50</td>
+                        <td>75</td>
+                        <td>25</td>
+                       
+          
+                    </tr>
+                </tbody>
+            </table></div>
+            <div  style="color: azure;" id="wrapper">
+            <h4 class="display-4">Other Skills</h4>
+            <ul>
+                <li>Wordpress</li>
+                <li>PHP</li>
+                <li>Blender</li>
+                <li>Adobe Premier Pro</li>
+                <li>Adobe After Effects</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>AWS</li>
+                <li>GitHub</li>
 
-
-        <!-- main content-->
-        <main class="container">
-
-            <div class=" jumbotron ">
-                <h1 class="display-4 " align="center">Services
-                </h1>
-                <ul>
-                    <img src="Assets/images/unitygame.jpg " alt="service image" width=20% height=20% style="margin:50px 0px">
-                    <li>Game Development
-                        <ul>
-                            <li>I will develop a game in unity.</li>
-                        </ul>
-                    </li>
-                    <img src="Assets/images/gameassets.jpg " alt="service image " width=20% height=20% style="margin:50px 0px">
-                    <li>Game Assets
-
-                        <ul>
-                            <li>I will desgin assets for your game like character, soundtrack, texture etc.</li>
-                        </ul>
-                    </li>
-                    <img src="Assets/images/wordpresswebsite.jpg " alt="service image " width=20% height=20% style="margin:50px 0px">
-                    <li>Wordpress website
-                        <ul>
-                            <li>I will desgin and deploy your website on wordpress.</li>
-                        </ul>
-                    </li>
-                    <img src="Assets/images/androidapp.png " alt="service image" width=20% height=20% style="margin:50px 0px">
-                    <li>Android Application
-                        <ul>
-                            <li>I will develop an android application.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
-        </main>
-
+            </ul>
+        </div> 
+        </div>
+    
+</main>
         <%- include partials/bottom_nav.ejs %>
 
             <%- include partials/footer.ejs %>
