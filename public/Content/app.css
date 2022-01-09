@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap%27'); 
+ 
  body {
     margin: auto;
-        
+       
     max-width: 100%;
     max-height: 100%;
     overflow: auto;
@@ -297,3 +299,16 @@ a {
 }
 
 
+
+
+.roles {
+    font-size: 30px;
+    height: 50px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.roles div {
+    height: 50px;
+    transition: margin-top 1s ease-in-out;
+}
