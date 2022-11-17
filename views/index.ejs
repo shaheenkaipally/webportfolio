@@ -2,17 +2,41 @@
 
     <%- include partials/main_nav.ejs %>
 
-
+    
+        
+    
         <!-- main content-->
-        <main class="container">
-            <h1 class="display-4 " style="color:rgb(204, 204, 204);" align="center ">Portfolio Website
-            </h1>
-            <div class=" jumbotron " style="width: 100%; margin: 200px auto; background-image: url('Assets/images/bg2.jpg');">
-                <h1 class="display-4 " style="color:rgb(0, 0, 0);" align="center ">I am Shaheen Kaipally
-                </h1>
-                <h2 class=" display-9 " style="color:rgb(206, 206, 206); " align="center ">“Start by doing what’s necessary, then what’s possible, and suddenly you are doing the impossible.” <br> - George Miller
-                    </h1>
-            </div>
+        <main class="center">
+
+
+          
+            
+          <div class="Menu">
+            <ul class="Menu-list" data-offset="10">
+              <li class="Menu-list-item" data-offset="20" onclick>
+              About Me
+                <span class="Mask" ><span><a href="/about">About Me</a></span></span>
+                <span class="Mask" ><span><a href="/about">About Me</a></span></span>
+              </li>
+              <li class="Menu-list-item" data-offset="16" onclick>
+                Projects
+                <span class="Mask"><span><a href="project">Projects</a></span></span>
+                <span class="Mask"><span><a href="project">Projects</a></span></span>
+              </li>
+              <li class="Menu-list-item" data-offset="12" onclick>
+                Skills
+                <span class="Mask"><span><a href="services">Skills</a></span></span>
+                <span class="Mask"><span><a href="services">Skills</a></span></span>
+              </li>
+              <li class="Menu-list-item" data-offset="8" onclick>
+                Contact Me
+                <span class="Mask"><span><a href="contact">Contact Me</a></span></span>
+                <span class="Mask"><span><a href="contact">Contact Me</a></span></span>
+              </li>
+            </ul>
+          </div>
+
+            
         </main>
 
         <%- include partials/bottom_nav.ejs %>
